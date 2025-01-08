@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="survey">
+      <main>
+        <h1 id="title">Complete our Survey</h1>
+        <p id="description">Help us create a better customer experience</p>
+        <!-- <img src="https://raw.githubusercontent.com/AMATCreator/practice/main/Pink%20rose%208.png" alt="rose" class="rotate-image" /> -->
+        <form id="survey-form">
+          <Fieldset>
+            <legend>Personal Info</legend>
+            <label for="name" id="name-label">Name: 
+              <input id="name" type="text" name="name" required placeholder="Name" />
+            </label>
+            <label for="surname">Surname: 
+              <input id="surname" type="text" name="surname" required placeholder="Surname" />
+            </label>
+            <label for="number" id="number-label">Age: 
+              <input id="number" type="number" name="age" min="16" max="120" placeholder="Age" />
+            </label>
+            <label for="email" id="email-label">Email:
+              <input id="email" type="email" required name="email" placeholder="Email address" />
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Choose what applies to you (Required)</legend>
+              <label for="man">
+                <input id="man" type="radio" name="gender" class="inline" value="gender1" checked required /> Man
+              </label>
+              <label for="woman">
+                <input id="woman" type="radio" name="gender" class="inline" value="gender2" required /> Woman
+              </label>
+              <label for="none">
+                <input id="none" type="radio" name="gender" class="inline" value="gender3" required /> Not disclosed
+              </label>
+          </fieldset>
+          <fieldset>
+            <legend>Your interests</legend>
+            <p>Which products or services would you like to see in our shop?</p>
+              <div id="shop-content" class="checkbox-container">
+                <label for="handmade">
+                  <input id="handmade" type="checkbox" class="inline" value="handmade" checked />More handmade items
+                </label>
+                <label for="tutorials">
+                  <input id="tutorials" type="checkbox" class="inline" value="tutorials" />More DIY tutorials
+                </label>
+                <label for="workshops">
+                  <input id="workshops" type="checkbox" class="inline" value="workshops" />Online workshop options
+                </label>
+                <label for="women-clothing">
+                  <input id="women-clothing" type="checkbox" class="inline" value="women-clothing" />More clothing for women
+                </label>
+                <label for="children-clothing">
+                  <input id="children-clothing" type="checkbox" class="inline" value="children-clothing" />More clothing for children
+                </label>
+                <label for="fair">
+                  <input id="fair" type="checkbox" class="inline" value="fair" />More fair exposure
+                </label>
+              </div>
+              <label for="suggestions">Other suggestions:
+                <textarea id="suggestions" name="other" rows="4" cols="40" placeholder="Tell us what you would like to see available in our shop"></textarea>
+              </label>
+          </fieldset>
+          <fieldset>
+            <label for="dropdown">How did you find us?
+              <select id="dropdown" >
+                <option value="">Choose one</option>
+                <option value="1">Friends</option>
+                <option value="2">Google</option>
+                <option value="3">Facebook</option>
+                <option value="4">Pinterest</option>
+                <option value="5">Instagram</option>
+                <option value="6">Fair</option>
+                <option value="7">Other</option>
+              </select>
+            </label>
+          </fieldset>
+          <label for="terms-and-conditions" class="terms">
+            <input id="terms-and-conditions" class="inline" type="checkbox" required name="terms-and-conditions" value="terms-and-conditions" />I accept the Terms and Conditions
+          </label>
+          <input id="submit" type="submit" value="Submit" />
+        </form>  
+      </main>
+      <footer>
+        <p class="shop-name">Maison Matkina</p>
+        <p class="copy">© All rights reserved</p>
+      </footer>
+    </div>
+  </body>
+</html>

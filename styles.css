@@ -1,0 +1,96 @@
+#title {
+    text-align: center;
+    font-family: castellar;
+    margin-bottom: 5px;
+  }
+  
+  #description {
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 40px;
+  }
+  
+  body {
+   background-image: url('https://raw.githubusercontent.com/AMATCreator/practice/main/floralbackground.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-positioning: center;
+   background-attachment: fixed;
+   margin: 0;
+   padding: 0;
+   height: 100vh;
+   font-family: cambria;
+   font-size: 18px;
+  }
+  
+  img {
+    display: block;
+    align: center;
+    margin-left: auto;
+    margin-right: auto;
+    scale: 7%
+  }
+  
+  .rotate-image {
+        transform: rotate(-90deg); /* Rotates the image by 45 degrees */
+      transition: transform 0.5s; /* Adds a smooth transition effect */
+  }
+  
+  form {
+    width: 80vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+  }
+  
+  label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  .inline {
+    display: inlign-block;
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  
+  .terms {
+    text-align: center;
+  }
+  
+  #input[type='submit'] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    min-width: 300px;
+  }
+  
+  .shop-name {
+    display: center;
+    font-family: MV Boli;
+    font-size: 1.5rem;
+    padding: 0;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 0.1em auto;
+  }
+  
+  input, textarea, select {
+    margin: 10px 0 0 0;
+    width: 100%;
+  }
+  
+  .shop-name {
+    margin-bottom: 5px;
+  }
+  
+  .copy {
+    margin-top: 3px;
+    padding-bottom: 15px;
+  }
